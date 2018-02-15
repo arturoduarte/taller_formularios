@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class="text-center">Listado de Todas las Ventas Realizadas</h1>
+<br>
+
+<table class="table table-striped table-hover">
+	<thead>
+		<tr>
+			<th>Detalle</th>
+			<th>Categoria</th>
+			<th>Valor</th>
+			<th>Descuento</th>
+			<th>Impuesto</th>
+			<th>Total</th>
+			<th>Acción</th>
+
+		</tr>
+	</thead>
+	
+	<tbody>
+		
+		<% @sale.each do |dato| %>
+		<tr>
+			<td><%= dato.detail %></td>
+			<td><%= dato.category %></td>
+			<td><%= dato.value %></td>
+			<td><%= dato.discount %></td>
+			<td><%= dato.tax %></td>
+			<td><%= dato.total %></td>
+			<td> <%= link_to 'Elimnar', eliminar_sale_path(dato), method: :delete, class: "btn btn-danger" %></td>
+		</tr>
+		<% end %>
+		
+	</tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nueva Venta', sales_new_path, class: "btn btn-success" %>
+
+

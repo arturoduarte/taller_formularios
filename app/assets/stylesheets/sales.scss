@@ -1,0 +1,173 @@
+// Place all the styles related to the sales controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+$green: #16a085;
+$grey: #5A6576;
+$other-grey: #E7ECEE;
+$blue: #058CC5;
+$red: #ff0000;
+$light-blue: #3498DB;
+$teal: #009688;
+$gray: #DCDCDC; 
+
+/* ===========Texto=========== */
+.bold{
+	font-weight: bold;
+}
+/* ===========Colores=========== */
+
+.gray{
+	background-color: #DCDCDC; 
+}
+
+.white{
+	background-color: white;
+}
+
+.white-text{
+	color: white;
+}
+
+.teal{
+	background-color: $teal;
+}
+
+.teal-text{
+	color: $teal;
+}
+
+.green{
+	background-color: $green;
+}
+
+.green-text{
+	color: $green; 
+}
+
+.blue{
+	background-color: $blue;
+}
+
+.blue-text{
+	color: $blue;
+}
+
+.light-blue{
+	background-color: $light-blue;
+}
+
+.light-blue-text{
+	color: $light-blue;
+}
+
+.red{
+	background-color: $red;
+}
+
+.red-text{
+	color: $red;
+}
+
+.grey{
+	background-color: $grey;
+}
+
+.grey-text{
+	color: $grey;
+}
+
+.other-grey{
+	background-color: $other-grey;
+}
+.other-grey-text{
+	color: $other-grey;
+}
+
+/* ===========Paddings=========== */
+.large-padding{
+	padding:5px 10px;
+}
+
+.tall-padding{
+	padding: 10px 5px; 
+}
+
+.big-padding{
+	padding:2em;
+}
+
+.no-padding{
+	padding:0 !important;
+}
+// /*=========== Margins=========== */
+form .field, form .actions {
+	margin: 12px 0;
+}
+
+.no-margin{
+	margin:0;
+}
+
+.big-top-space{
+	margin-top:50px;
+}
+
+.top-space{
+	margin-top:1em;
+}
+
+.bottom-space{
+	margin-bottom:2em;
+}
+
+/* ===========Alineamiento=========== */
+.no-float{
+	float: none !important;
+}
+
+.in-top{
+	vertical-align:top !important;
+}
+
+.inline-block {
+	// float: none !important;
+	display: inline-block;
+	vertical-align:middle;
+	margin-right: -4px;
+}
+
+.absolute{
+	position:absolute;
+}
+/* ===========Tamaños=========== */
+.small{
+	font-size:12px;
+}
+.normal{
+	font-size: 1.2em;
+}
+.medium{
+	font-size:1.5em;
+}
+.big{
+	font-size:3em;
+}
+.bigger{
+	font-size:4em;
+}
+.ultra-big{
+	font-size:7em;
+}
+
+.center-block {
+	// display: block;
+	margin-left: auto;
+	margin-right: auto;
+	// width: 40%;
+}
+
+img{
+	max-width: 100%;
+}

@@ -1,0 +1,35 @@
+# == Schema Information
+#
+# Table name: sales
+#
+#  id         :integer          not null, primary key
+#  cod        :integer
+#  detail     :string
+#  category   :integer
+#  value      :integer
+#  discount   :integer
+#  tax        :integer
+#  total      :float
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cod: 1
+  detail: MyString
+  category: 1
+  value: 1
+  discount: 1
+  tax: 1
+  total: 1.5
+
+two:
+  cod: 1
+  detail: MyString
+  category: 1
+  value: 1
+  discount: 1
+  tax: 1
+  total: 1.5

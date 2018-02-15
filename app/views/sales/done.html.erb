@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class="text-center">Ventas Realizadas</h1>
+<br>
+
+<table class="table table-striped table-hover">
+	<thead>
+		<tr>
+			<th>Detalle</th>
+			<th>Categoria</th>
+			<th>Valor</th>
+			<th>Descuento</th>
+			<th>Impuesto</th>
+      <th>Total</th>
+		</tr>
+	</thead>
+
+	<tbody>
+			<tr>
+				<td><%= @sale.detail %></td>
+				<td><%= @sale.category %></td>
+				<td><%= @sale.value %></td>
+				<td><%= @sale.discount %></td>
+				<td><%= @sale.tax %></td>
+        <td><%= @sale.total %></td>
+			</tr>
+	</tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nueva Venta', sales_new_path, class: "btn btn-success" %>
+
+
+

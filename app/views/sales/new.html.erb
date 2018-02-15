@@ -1,0 +1,54 @@
+<h1 style="color:rgb(28, 99, 10); text-align:center;">Ventas</h1>
+
+<div class="col-md-10 col-xs-12 col-sm-11 center-block text-center">
+	<div class="card gray text-dark large-padding">
+		
+		<%= form_with(model: @sale , local: true) do |form| %>
+		<% if @sale.errors.any? %>
+		<div id="error_explanation">
+			<h2><%= pluralize(@sale.errors.count, "errores") %> prohiben que esta Venta sea Guardada</h2>
+			
+			<ul>
+				<% @sale.errors.full_messages.each do |message| %>
+				<p style="color:red"> - <%= message %> </p>
+				<% end %>
+			</ul>				
+		</div>
+		<% end %>
+		
+		
+		<div class="field">
+			<%= form.label 'Detalle:' %>
+			<%= form.text_area :detail, id: :sale_detail, autofocus:true %>
+		</div><br>
+		
+		<div class="field">
+			<%= label_tag 'Categoria:' %>
+			<%= form.text_field :category, id: :sale_category %>
+		</div><br>
+		
+		<div class="field">
+			<%= label_tag 'Valor:' %>
+			<%= form.number_field :value, id: :sale_value %>
+		</div><br>
+		
+		<div class="field">
+			<%= label_tag 'Descuento:' %>
+			<%= form.number_field :discount, id: :sale_discount %>
+		</div><br>
+		
+		<div class="field">
+			<%= label_tag 'Exento de IVA' %> <br>
+			<%= label_tag("SI" ) %> 
+			<%= check_box_tag('tax', 'SI') %>
+			
+		</div><br>
+		
+		<br>
+		<div class="actions">
+			<%= form.submit "Guardar Venta" %>
+		</div>
+		<% end %>
+		
+	</div>
+</div>
